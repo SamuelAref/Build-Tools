@@ -1,0 +1,17 @@
+Script are found inside a json file that will run commands 
+
+    normally it is 
+
+        "scripts" : {
+
+            "test" : "some gibberish"
+        }
+
+    we can customize it to run custom orders like if we want to run a file by the command "start" 
+
+        "scripts": {
+
+            "start": "node index.js"
+        },
+
+        //so here if we type npm start, it will run index.js file 
