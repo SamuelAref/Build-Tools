@@ -1,0 +1,40 @@
+Webpack, Rollup, Parcel and Snowpack 
+
+    Module Bundlers 
+
+        - take multiple js file and compile it to a single js file 
+        - so in our example we installed the lodash package
+        - then we created js file and html file and linked to it 
+        - after that, when we tried to access the lodash from the js file it wasn't importing because it doesn't know where to find it  
+
+         index.js file 
+         
+            import {camelCase} from 'lodash';
+            console.log(camelCase('hello world'));
+
+
+        - This is where web pack comes in 
+        - first we install it using 
+            - npm install --save-dev webpack webpack-cli
+
+        - then we edit the scipt of json file 
+                "build" : "webpack" 
+            - then we run npm  run build 
+
+        - remember that webpack looks for the index.js file  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
