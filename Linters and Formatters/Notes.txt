@@ -1,0 +1,62 @@
+VSCode ESLint, Prettier  (Airbnb Guide) 
+        link - https://github.com/airbnb/javascript
+
+    Lintint - is the processes of analyzing your code to check for various errors and norms 
+            - mostly used for large scale production 
+            - install extension 
+
+            eslint.org
+
+    Prettier - prettier.io
+             - install extension 
+
+
+    - install packages 
+
+        - npm init -y 
+        - npm i -D eslint prettier eslint-plugin-prettier eslint-config-prettier eslint-plugin-node eslint-config-node
+
+    - then install the airbnb version 
+
+        - npx install-peerdeps --dev eslint-config-airbnb
+
+
+    - then create our config files
+
+        prettier config 
+
+            .prettierrc file 
+
+                { // can see more options on the prettier website 
+
+                    "singleQuote" : true
+                }
+
+        Lint config 
+
+            - can install it using 
+                npm i -g eslint
+
+            - then can generate the config file using 
+
+                eslint --init 
+
+            - in the .eslintrc.json file 
+
+                we edit it and add our custom rules 
+
+                    {
+
+                        "extends": ["airbnb","prettier"],
+                        "plugins": ["prettier"],
+                        "rules": {
+
+                            "prettier/prettier" : "error",
+                            "no-unused-vars" : "warn",
+                            "no-console": "off"
+                        }
+                    }
+
+
+                    
+
